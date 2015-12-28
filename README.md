@@ -1,11 +1,16 @@
 # ionic2-rxjs-socketio-chat
 
-## Screenshot
-![ScreenShot](https://raw.githubusercontent.com/jkuri/ionic2-rxjs-socketio-chat/master/screenshots/screenshot.png)
 
 ## Install & Run
 
-First, install server dependencies and run the server. 
+## Clone this repo
+
+````bash
+git clone https://github.com/jkuri/ionic2-rxjs-socketio-chat.git
+cd ionic2-rxjs-socketio-chat
+````
+
+Install server dependencies and run the server. 
 Note that the server must be running for application to work.
 
 ````bash
@@ -39,6 +44,9 @@ ionic run android
 ## Author
 
 [Jan Kuri](http://www.jankuri.com)
+
+## Preview
+![ScreenShot](https://raw.githubusercontent.com/jkuri/ionic2-rxjs-socketio-chat/master/screenshots/screenshot.png)
 
 ## Licence
 
