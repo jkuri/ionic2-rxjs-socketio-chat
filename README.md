@@ -3,7 +3,7 @@
 
 ## Install & Run
 
-## Clone this repo
+Clone this repo
 
 ````bash
 git clone https://github.com/jkuri/ionic2-rxjs-socketio-chat.git
