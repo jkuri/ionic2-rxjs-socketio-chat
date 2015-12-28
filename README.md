@@ -1,5 +1,8 @@
 # ionic2-rxjs-socketio-chat
 
+## Screenshot
+![ScreenShot](https://raw.githubusercontent.com/jkuri/ionic2-rxjs-socketio-chat/master/screenshots/screenshot.png)
+
 ## Install & Run
 
 First, install server dependencies and run the server. 
