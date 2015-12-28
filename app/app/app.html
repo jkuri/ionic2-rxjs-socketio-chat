@@ -1,0 +1,16 @@
+<ion-content class="login" *ngIf="!loggedIn()">
+  <ion-list>
+    <ion-input stacked-label>
+      <ion-label>Name</ion-label>
+      <input type="text" [(ngModel)]="name">
+    </ion-input>
+    <button block (click)="login()">Login</button>
+  </ion-list>
+</ion-content>
+
+<ion-tabs *ngIf="loggedIn()" preloadTabs="true">
+  <ion-tab [root]="friendsPage" tabTitle="Friends" tabIcon="people"></ion-tab>
+  <ion-tab [root]="settingsPage" tabTitle="Settings" tabIcon="cog"></ion-tab>
+</ion-tabs>
+
+<ion-overlay></ion-overlay>

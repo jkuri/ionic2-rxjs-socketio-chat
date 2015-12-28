@@ -1,0 +1,90 @@
+.chat {
+  padding-bottom: 50px;
+
+  .header {
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 0 5px;
+    border-bottom: 1px solid #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #f4f4f4;
+    h2 {
+      font-size: 18px;
+      padding: 8px 0;
+      margin: 0;
+      float: left;
+      display: block;
+    }
+    button {
+      margin: 6px 0;
+      float: right;
+    }
+  }
+
+  .messages {
+    width: 100%;
+    position: absolute;
+    .message {
+      width: 70%;
+      padding: 5px 10px;
+      background: #387ef5;
+      color: #fff;
+      border-radius: 5px;
+      margin: 5px;
+      float: left;
+      .date {
+        display: block;
+        font-size: 10px;
+      }
+      img.avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
+        display: block;
+        float: left;
+        margin-right: 5px;
+        margin-left: -5px;
+      }
+    }
+    .message.me {
+      float: right;
+      background: #fff;
+      border: 1px solid #387ef5;
+      color: #222;
+      text-align: right;
+      img.avatar {
+        display: none;
+      }
+    }
+  }
+
+  .msg {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 5px;
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #222;
+    background: #f4f4f4;
+    input {
+      display: block; 
+      float: left;
+      width: 75%;
+      outline: none;
+      border: 1px solid #222;
+      border-radius: 3px;
+      padding: 4px 5px;
+      margin-top: 6px;
+    }
+    button {
+      display: block;
+      float: right;
+      width: 18%;
+      margin-top: 5px;
+    }
+  }
+}

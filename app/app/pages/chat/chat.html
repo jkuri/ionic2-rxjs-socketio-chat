@@ -1,0 +1,24 @@
+<ion-toolbar>
+  <ion-buttons>
+    <button small (click)="close()">Close</button>
+  </ion-buttons>
+  <ion-title>
+    {{ friend.name }}
+  </ion-title>
+</ion-toolbar>
+<ion-content id="chat" class="chat">
+  <div class="messages">
+    <div class="message" *ngFor="#m of msgs | async" [ngClass]="{'me': m.sender.id === me.id}">
+      <img [src]="m.sender.avatar" class="avatar" *ngIf="m.sender.id !== me.id">
+      {{ m.msg }}
+      <span class="date">{{ m.dateSent | date:'medium' }}</span>
+    </div>
+  </div>
+</ion-content>
+<div class="msg">
+  <input type="text" placeholder="Message ..." [(ngModel)]="msg" (keydown.enter)="sendMessage()">
+  <button small (click)="sendMessage()" 
+                [disabled]="msg === ''">
+    Send
+  </button>  
+</div>
